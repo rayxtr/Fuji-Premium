@@ -29,7 +29,7 @@ const Dashboard = () => {
 
   const handleLogout = async () => {
     try {
-      await axios.post("http://localhost:5000/api/admin/logout", {}, { withCredentials: true });
+      await axios.post("http://localhost:5000/api/logout", {}, { withCredentials: true });
       navigate("/fj-admin");
     } catch (err) {
       console.error("Logout failed");

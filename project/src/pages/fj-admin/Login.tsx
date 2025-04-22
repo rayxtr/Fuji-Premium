@@ -11,7 +11,7 @@ const Login = () => {
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/api/admin/login", {
+      const res = await axios.post("http://localhost:5000/api/login", {
         username,
         password,
       }, { withCredentials: true });
@@ -23,6 +23,7 @@ const Login = () => {
       }
     } catch (err) {
       setError("Login failed. Try again.");
+      console.log(err)
     }
   };
 
