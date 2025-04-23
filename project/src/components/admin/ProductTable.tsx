@@ -14,7 +14,7 @@ const ProductTable = ({ products, onDelete }: Props) => {
       <table className="w-full table-auto">
         <thead className="bg-gray-200">
           <tr>
-            <th className="text-left p-3">Image</th>
+            <th className="text-left p-3">IMG</th>
             <th className="text-left p-3">Name</th>
             <th className="text-left p-3">Price</th>
             <th className="text-left p-3">Type</th>
